@@ -30,11 +30,11 @@ async function example() {
 
 ## Highlight
 
-🖊 Good coding quality
-👀 Highly readable
-😄 Fewer things to remember
-✅ Safety design
-🛡 Type only
+- 🖊 Good coding quality
+- 👀 Highly readable
+- 😄 Fewer things to remember
+- ✅ Safety design
+- 🛡 Type only
 
 ## Intall
 

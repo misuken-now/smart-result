@@ -2,12 +2,12 @@
     "compilerOptions": {
       "target": "esnext",
       "module": "esnext",
+      "outDir": "./dist",
       "declaration": true,
-      "outDir": "./lib",
+      "emitDeclarationOnly": true,
       "esModuleInterop": true,
       "forceConsistentCasingInFileNames": true,
-      "strict": true,
-      "skipLibCheck": true
+      "strict": true
     },
     "include": ["src/**/*.ts"],
     "exclude": ["node_modules"]

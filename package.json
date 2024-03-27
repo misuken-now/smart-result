@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "yarn clean && tsc -p ./tsconfig.json",
-    "clean": "del-cli lib module",
+    "clean": "del-cli dist module",
     "versionup:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major",
     "versionup:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor",
     "versionup:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch"
@@ -20,10 +20,9 @@
     "url": "https://github.com/misuken-now/smart-result/issues"
   },
   "homepage": "https://github.com/misuken-now/smart-result#readme",
-  "main": "./lib/index.js",
-  "typings": "./lib/index.d.ts",
+  "typings": "./dist/index.d.ts",
   "files": [
-    "lib",
+    "dist",
     "!**/__tests__"
   ],
   "devDependencies": {
