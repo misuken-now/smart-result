@@ -1,0 +1,33 @@
+{
+  "name": "smart-result",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "build": "yarn clean && tsc -p ./tsconfig.json",
+    "clean": "del-cli lib module",
+    "versionup:major": "changelog -M && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version major",
+    "versionup:minor": "changelog -m && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version minor",
+    "versionup:patch": "changelog -p && git add CHANGELOG.md && git commit -m 'updated CHANGELOG.md' && npm version patch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/misuken-now/smart-result.git"
+  },
+  "keywords": [],
+  "author": "misuken-now (https://github.com/misuken-now)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/misuken-now/smart-result/issues"
+  },
+  "homepage": "https://github.com/misuken-now/smart-result#readme",
+  "main": "./lib/index.js",
+  "typings": "./lib/index.d.ts",
+  "devDependencies": {
+    "generate-changelog": "^1.8.0",
+    "del-cli": "^4.0.1",
+    "typescript": "^5.4.3"
+  },
+  "peerDependencies": {
+    "typescript": ">=4.6.0"
+  }
+}
