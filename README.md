@@ -3,7 +3,7 @@
 This type library is a very smart result type available in TypeScript 4.6 or later.
 
 ```
-import type { Reulst } from "smart-result";
+import type { Result } from "smart-result";
 
 async function loadData(): Promise<Result<Data, Error>> {
     try {
@@ -53,7 +53,7 @@ yarn add -D `smart-result`
 ### Void Pattern
 
 ```
-import type { Reulst } from "smart-result";
+import type { Result } from "smart-result";
 
 async function start(): Promise<Result<true, Error>> {
     try {
@@ -81,7 +81,7 @@ async function example() {
 ### Return Data Pattern
 
 ```
-import type { Reulst } from "smart-result";
+import type { Result } from "smart-result";
 
 async function loadData(): Promise<Result<Data, Error>> {
     try {
@@ -109,7 +109,7 @@ async function example() {
 ### Return Value Pattern
 
 ```
-import type { Reulst } from "smart-result";
+import type { Result } from "smart-result";
 
 async function loadValue(): Promise<Result<{ value: number }, Error>> {
     try {
