@@ -1,3 +1,9 @@
+#### 0.0.4 (2024-03-27)
+
+##### Documentation Changes
+
+*  fix typo ([fea5d1e8](https://github.com/misuken-now/smart-result/commit/fea5d1e8216f8c961032dec14724a314b0ec5807))
+
 #### 0.0.3 (2024-03-27)
 
 ##### Chores
