@@ -25,9 +25,9 @@ jobs:
       - name: Enable Corepack
         run: corepack enable
       - name: Prepare Yarn
-        run: corepack prepare yarn@1.22.22 --activate
+        run: corepack prepare yarn@4.9.2 --activate
       - name: Install dependencies
-        run: yarn install --frozen-lockfile --ignore-scripts
+        run: yarn install --immutable
       - name: Build package
         run: yarn build
       - name: Deploy
